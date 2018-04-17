@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+
+    <style name="Header">
+        <item name="android:textSize">@dimen/header</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="BigPinkHeader">
+        <item name="android:textSize">64sp</item>
+        <item name="android:textColor">@color/colorDarkPink</item>
+    </style>
+
+    <style name="MediumGreyHeader">
+        <item name="android:textSize">56sp</item>
+        <item name="android:textColor">@color/colorGrey</item>
+    </style>
+
+    <style name="SmallHeader">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textSize">@dimen/small_header</item>
+    </style>
+
+    <style name="Normal">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/normal</item>
+    </style>
+
+</resources>

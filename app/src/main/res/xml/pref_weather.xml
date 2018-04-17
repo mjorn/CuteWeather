@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:title="@string/title_shimmer"
+        android:key="@string/key_shimmer"
+        android:defaultValue="@bool/b_shimmer"
+        android:summaryOff="@string/off"
+        android:summaryOn="@string/on" />
+    <ListPreference
+        android:key="@string/key_units"
+        android:title="@string/title_units"
+        android:entries="@array/arr_units_titles"
+        android:entryValues="@array/arr_units_keys"
+        android:defaultValue="true"/>
+
+
+
+</PreferenceScreen>

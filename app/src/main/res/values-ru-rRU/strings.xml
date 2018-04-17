@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cute Weather</string>
+    <string name="refresh">Обновить</string>
+    <string name="settings">Настройки</string>
+    <string name="title_shimmer">Блестючки</string>
+    <string name="title_units">Градусы</string>
+    <string name="key_celsius">Цельсий</string>
+    <string name="key_fahrenheit">Фаренгейт</string>
+    <string name="pressure">Давление</string>
+    <string name="humidity">Влажность</string>
+    <string name="wind">Ветер</string>
+    <string name="forecast">Прогноз</string>
+    <string name="off">выкл.</string>
+    <string name="on">вкл.</string>
+    <string name="your_coordinates">Ваши координаты</string>
+</resources>

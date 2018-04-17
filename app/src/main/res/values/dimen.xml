@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="small_header">16sp</dimen>
+    <dimen name="normal">24sp</dimen>
+    <dimen name="header">36sp</dimen>
+</resources>

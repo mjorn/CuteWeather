@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/day_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:textAppearance="@style/BigPinkHeader"
+        android:textColor="@color/colorDarkPink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        tools:text="23°" />
+
+    <TextView
+        android:id="@+id/label_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/pressure"
+        android:textAppearance="@style/SmallHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_temp" />
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/label_pressure"
+        app:layout_constraintTop_toBottomOf="@+id/label_pressure"
+        android:textAppearance="@style/Normal"
+        tools:text="1012"/>
+
+    <TextView
+        android:id="@+id/pressure_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="hPa"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pressure"
+        app:layout_constraintStart_toEndOf="@+id/pressure" />
+
+    <TextView
+        android:id="@+id/label_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/humidity"
+        android:textAppearance="@style/SmallHeader"
+        app:layout_constraintStart_toStartOf="@+id/pressure"
+        app:layout_constraintTop_toBottomOf="@+id/pressure" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:text="37"
+        android:textAppearance="@style/Normal"
+        app:layout_constraintStart_toStartOf="@+id/label_humidity"
+        app:layout_constraintTop_toBottomOf="@+id/label_humidity" />
+
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="%"
+        app:layout_constraintBaseline_toBaselineOf="@+id/humidity"
+        app:layout_constraintStart_toEndOf="@+id/humidity" />
+
+    <TextView
+        android:id="@+id/label_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/wind"
+        android:textAppearance="@style/SmallHeader"
+        app:layout_constraintStart_toStartOf="@+id/humidity"
+        app:layout_constraintTop_toBottomOf="@+id/humidity" />
+
+    <TextView
+        android:id="@+id/wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:text="3.66"
+        android:textAppearance="@style/Normal"
+        app:layout_constraintStart_toStartOf="@+id/label_wind"
+        app:layout_constraintTop_toBottomOf="@+id/label_wind" />
+
+    <TextView
+        android:id="@+id/wind_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="km/h"
+        app:layout_constraintBaseline_toBaselineOf="@+id/wind"
+        app:layout_constraintStart_toEndOf="@+id/wind" />
+
+    <TextView
+        android:id="@+id/weekday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        tools:text="Sunday"
+        android:textAppearance="@style/Header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        tools:text="April 16"
+        android:textAppearance="@style/SmallHeader"
+        app:layout_constraintEnd_toEndOf="@+id/weekday"
+        app:layout_constraintStart_toStartOf="@+id/weekday"
+        app:layout_constraintTop_toBottomOf="@+id/weekday" />
+
+    <TextView
+        android:id="@+id/night_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:textAppearance="@style/MediumGreyHeader"
+        app:layout_constraintBaseline_toBaselineOf="@+id/day_temp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="16°" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="158dp"
+        android:layout_height="214dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/wind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/label_pressure"
+        tools:src="@drawable/ic_sun" />
+
+</android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</layout>
